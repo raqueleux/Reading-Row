@@ -6,7 +6,68 @@
   <link rel="icon" href="_media/favicon.ico">
   <meta name="description" content=" ">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css"><!-- / template styles -->
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+
+  <style>
+ .sidebar>h1 {
+    margin: 0!important;
+    margin: 0!important;
+    font-size: 14px;
+    background-color: #434343;
+    padding: 20px 0 1px 0px!important;
+  }
+
+  .sidebar>h1 a,
+  .markdown-section h1{
+  color: #F28379;
+  }
+  
+  .docs-img,
+  .sidebar>h1 a img{
+  max-width: 40px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+  .anchor span,
+  .sidebar {
+  color: #434343!important;
+  padding-top: 0!important;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  }
+  
+  .home-link {
+    text-decoration: underline;
+  }
+ .sidebar .sidebar-nav {
+  margin-top: 1em;
+ }
+ .content {
+  padding-top: 0!important
+ }
+.sidebar ul li.active>a {
+  font-family: 'Montserrat', sans-serif;
+  color: #F28379!important;
+
+}
+.sidebar ul li a,
+.markdown-section a {
+  font-family: 'Roboto', sans-serif;
+  color:#434343!important;
+  }
+  .markdown-section blockquote p {
+    font-weight: normal!important;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .app-sub-sidebar .section-link:before {
+    content: none;
+  }
+  .markdown-section figure, .markdown-section ol, .markdown-section p, .markdown-section ul {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  </style>
 </head>
 <body>
   <div id="app">Loading ...</div>
@@ -15,16 +76,17 @@
   window.$docsify = {
     auto2top: true,
     loadSidebar: true,
-    loadNavbar: true,
-    mergeNavbar: true,
+    autoHeader: true,
     maxLevel: 4,
     subMaxLevel: 2,
-    name: 'The Reading Row',
+    name: '<img src="/images/logo-dark.png" class="docs-img"> <h3 style="margin-top:0px!important;"><a href="/">Portfolio</a></h3>',
     repo: '',
     formatUpdated: '{MM}/{DD} {HH}:{mm}',
-    homepage: 'home.md',
-    themeColor: '#3F51B5',
-    ga: 'UA-XXXXX-Y'
+    themeColor: '#F28379',
+    ga: 'UA-68554356-1',
+    nameLink: '/',
+    repo: 'https://github.com/raqueleux/Reading-Row.git',
+
   }
 </script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -32,7 +94,6 @@
 <script src="//unpkg.com/docsify/lib/plugins/front-matter.min.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
 <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
-<script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
 
 
 
